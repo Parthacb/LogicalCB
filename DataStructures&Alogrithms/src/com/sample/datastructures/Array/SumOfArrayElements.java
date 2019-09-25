@@ -1,8 +1,8 @@
-package com.sample.datastructuresArray;
+package com.sample.datastructures.Array;
 
 import java.util.Scanner;
 
-public class Solution {
+public class SumOfArrayElements {
 
 	public static void main(String[] args) {
 		/*
@@ -14,13 +14,14 @@ public class Solution {
 		n = s.nextInt();
 		int[] a = new int[n];
 
+		int sum = 0;
+
 		for (int a_i = 0; a_i < n; a_i++) {
 			a[a_i] = s.nextInt();
+			sum = sum + a[a_i];
 		}
 
-		for (int a_j = n - 1; a_j >= 0; a_j--) {
-			System.out.print(a[a_j] + " ");
-		}
+		System.out.print(sum);
 
 	}
 }

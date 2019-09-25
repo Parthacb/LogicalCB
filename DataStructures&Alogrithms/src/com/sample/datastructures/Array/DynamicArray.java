@@ -1,4 +1,4 @@
-package com.sample.datastructuresArray;
+package com.sample.datastructures.Array;
 
 import java.util.ArrayList;
 import java.util.Scanner;

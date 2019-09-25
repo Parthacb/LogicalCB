@@ -1,4 +1,4 @@
-package com.sample.datastructuresArray;
+package com.sample.datastructures.Array;
 
 public class SubractOneFromEvenValue {
 
