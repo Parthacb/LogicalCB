@@ -1,9 +1,10 @@
-package com.sample.datastrucures.trees;
+package com.sample.datastructures.trees;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
-import com.sample.datastrucures.trees.Node;
+
+import com.sample.datastructures.trees.Node;
 
 public class LevelOrderTraversal {
 

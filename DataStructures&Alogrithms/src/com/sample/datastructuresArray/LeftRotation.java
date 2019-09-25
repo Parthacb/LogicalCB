@@ -1,4 +1,4 @@
-package com.sample.datastructers.Array;
+package com.sample.datastructuresArray;
 
 import java.io.*;
 import java.math.*;

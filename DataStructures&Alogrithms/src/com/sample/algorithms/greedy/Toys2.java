@@ -1,31 +1,31 @@
-package com.sample.alogorithms.greedy;
+package com.sample.algorithms.greedy;
 
 import java.util.Scanner;
 
-public class Search {
+public class Toys2 {
 
 	public static void main(String[] args) {
 
-		int v = 0;
 		int n = 0;
-
+		int u = 0;
 		Scanner s = new Scanner(System.in);
-		v = s.nextInt();
-
 		n = s.nextInt();
 
-		int[] r = new int[n];
+		boolean[] r = new boolean[n];
 
 		for (int i = 0; i < n; i++) {
-			r[i] = s.nextInt();
+			if (i == s.nextInt()) {
+				r[i] = true;
+			}
 		}
 
 		for (int j = 0; j < n; j++) {
-			if (v == r[j]) {
-				System.out.println(j);
-				break;
+			if (r[j] == true) {
+
 			}
 		}
+
+		s.close();
 
 	}
 

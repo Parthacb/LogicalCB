@@ -1,44 +1,41 @@
-package com.sample.alogorithms.greedy;
+package com.sample.algorithms.greedy;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class MarkandToys {
+public class Orders {
 
 	public static void main(String[] args) {
 
 		int n = 0;
-		int k = 0;
-
-		int t = 0;
-		int u = 0;
+		int v = 0;
 
 		Scanner s = new Scanner(System.in);
 		n = s.nextInt();
-		k = s.nextInt();
 
 		int[] r = new int[n];
+		int[] u = new int[n];
 
 		for (int i = 0; i < n; i++) {
-			r[i] = s.nextInt();
+			int t = s.nextInt();
+			int d = s.nextInt();
+			r[i] = t + d;
+			u[i] = t + d;
 		}
 
 		s.close();
-
 		Arrays.sort(r);
 
 		for (int j = 0; j < n; j++) {
-			if (k >= r[j]) {
-				u++;
-				k -= r[j];
+			v = r[j];
+			for (int k = 0; k < n; k++) {
+				if (v == u[k]) {
+					System.out.print(k + 1 + " ");
+					break;
+				}
 			}
 
-			else {
-				break;
-			}
 		}
-
-		System.out.println(u);
 
 	}
 

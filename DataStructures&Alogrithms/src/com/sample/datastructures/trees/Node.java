@@ -1,4 +1,4 @@
-package com.sample.datastrucures.trees;
+package com.sample.datastructures.trees;
 
 public class Node {
 
